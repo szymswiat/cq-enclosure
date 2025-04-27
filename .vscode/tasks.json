@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Render enclosure",
+			"type": "shell",
+			"command": "uv run -m examples.generic_enclosure",
+			"options": {
+				"env": {
+					"PYTHONPATH": "${workspaceFolder}"
+				},
+				"cwd": "${workspaceFolder}"
+			}
+		},
+    ],
+}
