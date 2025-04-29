@@ -28,10 +28,6 @@ class EnclosureParameters(BaseModel):
     actual_inner_width: bool = True
     actual_inner_length: bool = True
 
-    # enclosure wall thickness
-    wall_thickness: float = 3.0
-    bottom_and_lid_thickness: float = 2.0
-
     # splits into two solids: box and lid
     cut_top: float = 5.0
 
@@ -137,6 +133,15 @@ class EnclosureParameters(BaseModel):
                 "box_outer_width must be at least 31.0 if mount_holders "
                 "are enabled and screws are outside the box."
             )
+
+    # enclosure wall thickness
+    @property
+    def wall_thickness(self) -> float:
+        return 3.0
+
+    @property
+    def bottom_and_lid_thickness(self) -> float:
+        return 2.0
 
     @property
     def screw_cylinder_fillet(self) -> float:

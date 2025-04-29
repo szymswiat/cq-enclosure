@@ -132,9 +132,7 @@ The `Enclosure` class accepts the following parameters:
 - `actual_inner_width`: Whether to include screw cylinder dimensions in box_inner_width when using inside box screws (default: True)
 - `actual_inner_length`: Whether to include screw cylinder dimensions in box_inner_length when using inside box screws (default: True)
 
-### Wall Thicknesses
-- `wall_thickness`: Thickness of the enclosure walls (default: 3.0mm)
-- `bottom_and_lid_thickness`: Thickness of the bottom and lid (default: 2.0mm)
+### Split to box and lid
 - `cut_top`: Height at which the box splits into lid and base (default: 5.0mm)
 
 ### Screw Configuration
